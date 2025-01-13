@@ -4,7 +4,7 @@ import heroImg from "../../public/hero.png";
 const Hero = () => {
   return (
     <div className=" w-full mt-20  flex flex-col justify-start relative">
-      <h3 className="text-lg uppercase text-white/80 tracking-widest text-center mb-5">
+      <h3 className="text-lg uppercase text-textMuted tracking-widest text-center mb-5">
         PixLab Vision platform
       </h3>
 
@@ -14,7 +14,7 @@ const Hero = () => {
         Intelligence with PixLab Vision
       </h1>
 
-      <p className="text-xl text-center mt-5 font-light">
+      <p className="text-xl text-center mt-5 font-light text-textMuted">
         PixLab Vision offers advanced tools for document processing and language
         model integration. It provides developers and businesses with APIs, a
         user-friendly playground, and parsing solutions to extract, organize,
@@ -22,11 +22,11 @@ const Hero = () => {
       </p>
 
       <div className="flex flex-row justify-center mt-10 gap-4">
-        <button className="bg-violet-500 p-5 rounded-2xl text-white text-base font-semibold ">
+        <button className="bg-primary p-5 rounded-2xl text-white text-base font-semibold ">
           Try Pixlab Vision
         </button>
 
-        <button className="border-[2px] border-white border-opacity-65 p-5 rounded-2xl text-white/80 text-base font-semibold ">
+        <button className="border-[2px] border-white border-opacity-65 p-5 rounded-2xl text-textMuted text-base font-semibold ">
           Explore LLM APIs
         </button>
       </div>

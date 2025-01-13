@@ -5,7 +5,7 @@ import ExtendedFeatures from "./Landing/ExtendedFeatures";
 import Services from "./Landing/Services";
 const Page: React.FC = () => {
   return (
-    <div className="min-h-screen  my-16 mx-auto  flex flex-col items-center max-w-7xl relative">
+    <div className="my-16 mx-auto  flex flex-col items-center max-w-7xl relative ">
       <header>Header</header>
 
       <main>

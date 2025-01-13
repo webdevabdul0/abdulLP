@@ -13,12 +13,12 @@ export default {
         sm: "0.5px",
         lg: "2px",
       },
-      textStrokeColor: {
-        DEFAULT: "#6366F1", // Default black stroke
-      },
+
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "rgba(var(--primary))",
+        primaryText: "rgba(var(--primaryText))",
+        textMuted: "rgba(var(--textMuted))",
       },
     },
   },
@@ -26,6 +26,7 @@ export default {
     function ({
       addUtilities,
     }: {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       addUtilities: (utilities: Record<string, any>) => void;
     }) {
       addUtilities({
