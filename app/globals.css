@@ -7,6 +7,10 @@
   --primary: 99, 102, 241;
   --primaryText: 255, 255, 255, 1;
   --textMuted: 255, 255, 255, 0.8;
+  --lightBorder: 255, 255, 255, 0.3;
+
+  --feature-gradient-start: rgba(166, 166, 255, 0.05);
+  --feature-gradient-end: rgba(232, 232, 253, 0.02);
 }
 
 .light {
@@ -14,6 +18,17 @@
   --primary: 99, 102, 241;
   --primaryText: 0, 0, 0, 1;
   --textMuted: 0, 0, 0, 0.8;
+  --lightBorder: 0, 0, 0, 0.3;
+  --feature-gradient-start: rgb(230, 230, 230);
+  --feature-gradient-end: rgb(230, 230, 230);
+}
+
+.bg-feature-gradient {
+  background: linear-gradient(
+    to bottom right,
+    var(--feature-gradient-start),
+    var(--feature-gradient-end)
+  );
 }
 
 body {

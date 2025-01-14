@@ -19,6 +19,7 @@ export default {
         primary: "rgba(var(--primary))",
         primaryText: "rgba(var(--primaryText))",
         textMuted: "rgba(var(--textMuted))",
+        lightBorder: "rgba(var(--lightBorder))",
       },
     },
   },

@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="light bg-background text-primaryText">
+    <html lang="en" className="dark bg-background text-primaryText">
       <body className={`${manrope.variable} antialiased`}>{children}</body>
     </html>
   );
