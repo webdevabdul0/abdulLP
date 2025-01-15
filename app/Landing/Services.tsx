@@ -51,7 +51,7 @@ const Services = () => {
             </li>
           </ul>
 
-          <button className="border-[2px] border-white border-opacity-65 p-5 rounded-2xl text-white/80 text-base font-semibold ">
+          <button className="border-[2px] border-white border-opacity-65 px-5 py-3 rounded-2xl text-white/80 text-base font-semibold ">
             Streamline your daily tasks with Pixlab Vision
           </button>
         </div>
@@ -113,7 +113,7 @@ const Services = () => {
             </li>
           </ul>
 
-          <button className="border-[2px] border-white border-opacity-65 p-5 rounded-2xl text-white/80 text-base font-semibold ">
+          <button className="border-[2px] border-white border-opacity-65 px-5 py-3 rounded-2xl text-white/80 text-base font-semibold ">
             Streamline your daily tasks with Pixlab Vision
           </button>
         </div>
@@ -165,7 +165,7 @@ const Services = () => {
             </li>
           </ul>
 
-          <button className="border-[2px] border-white border-opacity-65 p-5 rounded-2xl text-white/80 text-base font-semibold ">
+          <button className="border-[2px] border-white border-opacity-65 px-5 py-3 rounded-2xl text-white/80 text-base font-semibold ">
             Streamline your daily tasks with Pixlab Vision
           </button>
         </div>

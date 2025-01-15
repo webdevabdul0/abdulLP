@@ -22,11 +22,11 @@ const Hero = () => {
       </p>
 
       <div className="flex flex-row justify-center mt-10 gap-4">
-        <button className="bg-primary p-5 rounded-2xl text-white text-base font-semibold ">
+        <button className="bg-primary px-5 py-3 rounded-2xl text-white text-base font-semibold ">
           Try Pixlab Vision
         </button>
 
-        <button className="border-[2px] border-white border-opacity-65 p-5 rounded-2xl text-textMuted text-base font-semibold ">
+        <button className="border-[2px] border-white border-opacity-65 px-5 py-3 rounded-2xl text-textMuted text-base font-semibold ">
           Explore LLM APIs
         </button>
       </div>

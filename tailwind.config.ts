@@ -21,6 +21,17 @@ export default {
         textMuted: "rgba(var(--textMuted))",
         lightBorder: "rgba(var(--lightBorder))",
       },
+
+      borderImage: {
+        "custom-gradient": `linear-gradient(90deg, 
+          rgba(202, 223, 139, 1) 0%, 
+          rgba(248, 252, 207, 1) 16.67%, 
+          rgba(247, 208, 127, 1) 33.33%, 
+          rgba(225, 126, 113, 1) 50%, 
+          rgba(237, 92, 87, 1) 66.67%, 
+          rgba(112, 154, 219, 1) 83.33%, 
+          rgba(121, 193, 225, 1) 100%)`,
+      },
     },
   },
   plugins: [
