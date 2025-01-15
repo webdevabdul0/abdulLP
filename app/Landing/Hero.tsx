@@ -3,35 +3,35 @@ import Image from "next/image";
 import heroImg from "../../public/hero.png";
 const Hero = () => {
   return (
-    <div className=" w-full mt-20  flex flex-col justify-start relative">
-      <h3 className="text-lg uppercase text-textMuted tracking-widest text-center mb-5">
+    <div className=" w-full mt-10 md:mt-20  flex flex-col justify-start relative">
+      <h3 className="text-sm md:text-lg uppercase text-textMuted tracking-widest text-center mb-5">
         PixLab Vision platform
       </h3>
 
-      <h1 className="text-7xl font-bold  text-center">
+      <h1 className="text-4xl md:text-7xl font-extrabold  text-center">
         Revolutionize Document
         <br />
         Intelligence with PixLab Vision
       </h1>
 
-      <p className="text-xl text-center mt-5 font-light text-textMuted">
+      <p className="text-base md:text-xl text-center mt-5 font-light text-textMuted">
         PixLab Vision offers advanced tools for document processing and language
         model integration. It provides developers and businesses with APIs, a
         user-friendly playground, and parsing solutions to extract, organize,
         and analyze data efficiently for a seamless AI experience.
       </p>
 
-      <div className="flex flex-row justify-center mt-10 gap-4">
-        <button className="bg-primary px-5 py-3 rounded-2xl text-white text-base font-semibold ">
+      <div className="flex flex-row justify-center mt-6 md:mt-10 gap-4">
+        <button className="bg-primary px-5 py-2 sm:py-3 rounded-2xl text-white text-sm md:text-base font-semibold ">
           Try Pixlab Vision
         </button>
 
-        <button className="border-[2px] border-white border-opacity-65 px-5 py-3 rounded-2xl text-textMuted text-base font-semibold ">
+        <button className="border-[2px] border-white border-opacity-65 px-5 py-2 sm:py-3 rounded-2xl text-textMuted text-sm md:text-base font-semibold ">
           Explore LLM APIs
         </button>
       </div>
 
-      <div className="w-full mt-12">
+      <div className="w-full mt-8 md:mt-12">
         <Image src={heroImg} alt={"hero-img"} />
       </div>
 
