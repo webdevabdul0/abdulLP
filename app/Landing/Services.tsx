@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Image1 from "../../public/Services/1.png";
+import Image2 from "../../public/Services/2.png";
+import Image3 from "../../public/Services/3.png";
 
 const Services = () => {
   return (
@@ -63,9 +65,7 @@ const Services = () => {
 
       <div className="flex flex-row w-full">
         <div className="basis-1/2">
-          <div className="m-24 bg-white/10 h-80 flex justify-center items-center rounded-2xl">
-            IMG
-          </div>
+          <Image src={Image2} alt={"hero-img"} />
         </div>
 
         <div className="basis-1/2">
@@ -171,7 +171,7 @@ const Services = () => {
         </div>
 
         <div className="basis-1/2">
-          <Image src={Image1} alt={"hero-img"} />
+          <Image src={Image3} alt={"hero-img"} />
         </div>
       </div>
     </div>
