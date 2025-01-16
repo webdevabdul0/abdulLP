@@ -10,21 +10,21 @@ import Image2 from "../../public/Footer/2.png";
 
 const Footer = () => {
   return (
-    <div className="mt-24 bg-black flex flex-col items-center">
+    <div className="mt-24 bg-black flex flex-col items-center mx-5">
       <div className="max-w-7xl w-full border-t-2 border-white/20 py-12">
-        <div className="w-full flex flex-row justify-between">
-          <div className="flex flex-col">
+        <div className="w-full flex flex-col md:flex-row  md:justify-between  items-center md:items-start ">
+          <div className="flex flex-col mb-8 md:mb-0">
             <h2 className="text-primaryText text-2xl font-bold">Pixlab</h2>
 
             <div>Search</div>
           </div>
 
-          <div className="grid grid-cols-4 gap-16">
-            <div className="flex flex-col gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-16">
+            <div className="flex flex-col gap-4 items-center md:items-start">
               <h3 className="text-base font-bold text-primaryText">
                 Resources
               </h3>
-              <ul className="flex flex-col gap-2  font-normal text-base">
+              <ul className="flex flex-col gap-2  font-normal text-sm sm:text-base items-center md:items-start">
                 <li>
                   <a
                     href="#"
@@ -76,11 +76,11 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 items-center md:items-start ">
               <h3 className="text-base font-bold text-primaryText">
                 Resources
               </h3>
-              <ul className="flex flex-col gap-2  font-normal text-base">
+              <ul className="flex flex-col gap-2  font-normal text-sm sm:text-base items-center md:items-start">
                 <li>
                   <a
                     href="#"
@@ -132,11 +132,11 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 items-center md:items-start">
               <h3 className="text-base font-bold text-primaryText">
                 Resources
               </h3>
-              <ul className="flex flex-col gap-2  font-normal text-base">
+              <ul className="flex flex-col gap-2  font-normal text-sm sm:text-base items-center md:items-start ">
                 <li>
                   <a
                     href="#"
@@ -188,11 +188,11 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 items-center md:items-start">
               <h3 className="text-base font-bold text-primaryText">
                 Resources
               </h3>
-              <ul className="flex flex-col gap-2  font-normal text-base">
+              <ul className="flex flex-col gap-2  font-normal text-sm sm:text-base items-center md:items-start">
                 <li>
                   <a
                     href="#"
@@ -246,7 +246,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full flex flex-row justify-between mt-20">
+        <div className="w-full flex flex-col gap-5 md:gap-0 md:flex-row justify-between items-center md:items-start mt-20">
           <div className="flex flex-row gap-5">
             <Image src={fb} alt="fb" height={24} />
             <Image src={twt} alt="twt" width={24} height={24} />
@@ -255,8 +255,8 @@ const Footer = () => {
             <Image src={linkedin} alt="linkedin" width={24} height={24} />
           </div>
 
-          <div className="flex flex-row gap-10">
-            <p className="text-right text-white/30 text-base font-normal">
+          <div className="flex flex-col md:flex-row gap-10 items-center md:items-start">
+            <p className="text-center md:text-right text-white/30 text-base font-normal">
               Copyright © 2017 - 2023, Symisc Systems, SUARL. All rights
               reserved.
               <br />
