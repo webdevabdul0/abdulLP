@@ -1,4 +1,5 @@
 import React from "react";
+import { HoverEffect } from "../components/ui/card-hover-effect";
 
 const ExtendedFeatures = () => {
   return (

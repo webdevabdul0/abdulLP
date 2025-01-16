@@ -4,7 +4,8 @@
 
 :root {
   --background: #030303;
-  --primary: 99, 102, 241;
+  --primary: 0, 112, 243, 1;
+
   --primaryText: 255, 255, 255, 1;
   --textMuted: 255, 255, 255, 0.8;
   --lightBorder: 255, 255, 255, 0.3;
@@ -15,7 +16,7 @@
 
 .light {
   --background: #ffffff;
-  --primary: 99, 102, 241;
+  --primary: 0, 112, 243, 1;
   --primaryText: 0, 0, 0, 1;
   --textMuted: 0, 0, 0, 0.8;
   --lightBorder: 0, 0, 0, 0.3;

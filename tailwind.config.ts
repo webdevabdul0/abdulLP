@@ -43,7 +43,7 @@ export default {
     }) {
       addUtilities({
         ".stroke-text": {
-          WebkitTextStroke: "1px #6366F1", // Change stroke width and color as needed
+          WebkitTextStroke: "1px #0070f3", // Change stroke width and color as needed
           color: "transparent", // Optional: Makes only the stroke visible
         },
       });
