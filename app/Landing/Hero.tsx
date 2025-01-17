@@ -45,7 +45,7 @@ const Hero = () => {
     { scope: buttonContainer }
   );
   return (
-    <div className=" w-full mt-5 md:mt-12 ">
+    <div className="relative w-full mt-5 md:mt-12 ">
       <Vortex
         backgroundColor="#000000"
         rangeY={800}
@@ -96,8 +96,8 @@ const Hero = () => {
         </div>
       </Vortex>
 
-      {/*<div className="w-[682px]  h-[569px] bg-[#6366F1] absolute blur-[224px] rounded-full -z-50 opacity-20 -translate-x-20 "></div>
-      <div className="  size-[542px] bg-[#FFFFFF] absolute blur-[200px] rounded-full -z-50 opacity-10 right-0 bottom-0"></div>*/}
+      <div className="w-[682px]  h-[569px] bg-[#0070F3] absolute blur-[224px] rounded-full -z-50 opacity-20 -translate-x-20 top-0 left-0"></div>
+      <div className="  size-[542px] bg-[#0070F3] absolute blur-[224px] rounded-full -z-50 opacity-10 right-0 bottom-0"></div>
     </div>
   );
 };

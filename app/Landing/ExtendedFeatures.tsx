@@ -3,7 +3,7 @@ import { HoverEffect } from "../components/ui/card-hover-effect";
 
 const ExtendedFeatures = () => {
   return (
-    <div className="mt-12 md:mt-24  mx-5">
+    <div className="relative mt-12 md:mt-24  mx-5">
       <div className="flex flex-col items-center">
         <h2 className="text-2xl md:text-5xl font-bold text-center mb-2 sm:mb-5 text-primaryText">
           Empower Your Productivity
@@ -119,6 +119,7 @@ const ExtendedFeatures = () => {
           </p>
         </div>
       </div>
+      <div className="w-[682px]  h-[569px] bg-[#0070F3] absolute blur-[224px] rounded-full -z-50 opacity-20  top-0 transform translate-x-1/2"></div>
     </div>
   );
 };
