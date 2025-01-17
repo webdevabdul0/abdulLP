@@ -45,7 +45,7 @@ const Hero = () => {
     { scope: buttonContainer }
   );
   return (
-    <div className=" w-full mt-10 md:mt-20 ">
+    <div className=" w-full mt-5 md:mt-12 ">
       <Vortex
         backgroundColor="#000000"
         rangeY={800}
@@ -55,17 +55,17 @@ const Hero = () => {
       >
         <div ref={headerContent}>
           <div ref={headerText}>
-            <h3 className="text-sm md:text-lg uppercase text-textMuted tracking-widest text-center mb-5">
+            <h3 className="text-sm md:text-lg uppercase text-textMuted tracking-widest text-center mb-3">
               PixLab Vision platform
             </h3>
 
-            <h1 className="text-4xl md:text-7xl font-extrabold  text-center">
+            <h1 className="text-4xl md:text-7xl font-extrabold  text-center mb-5">
               Revolutionize Document
               <br />
               Intelligence with PixLab Vision
             </h1>
 
-            <p className="text-base md:text-xl text-center mt-5 font-light text-textMuted">
+            <p className="text-base md:text-xl text-center  font-light text-textMuted">
               PixLab Vision offers advanced tools for document processing and
               language model integration. It provides developers and businesses
               with APIs, a user-friendly playground, and parsing solutions to
@@ -75,7 +75,7 @@ const Hero = () => {
           </div>
 
           <div
-            className="flex flex-row justify-center mt-6 md:mt-10 gap-4"
+            className="flex flex-row justify-center mt-2 md:mt-6 gap-4"
             ref={buttonContainer}
           >
             <button className="shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-8 py-2 bg-[#0070f3] rounded-2xl text-white font-light transition duration-200 ease-linear text-sm md:text-base">
@@ -91,7 +91,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full mt-8 md:mt-12">
+        <div className="w-full mt-5 md:mt-6">
           <Carousal />
         </div>
       </Vortex>
