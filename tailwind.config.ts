@@ -1,5 +1,8 @@
 import type { Config } from "tailwindcss";
 
+const colors = require("tailwindcss/colors");
+import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
+
 export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -32,9 +35,30 @@ export default {
           rgba(112, 154, 219, 1) 83.33%, 
           rgba(121, 193, 225, 1) 100%)`,
       },
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+      },
     },
   },
   plugins: [
+    function addVariablesForColors({ addBase, theme }: any) {
+      let allColors = flattenColorPalette(theme("colors"));
+      let newVars = Object.fromEntries(
+        Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+      );
+
+      addBase({
+        ":root": newVars,
+      });
+    },
     function ({
       addUtilities,
     }: {

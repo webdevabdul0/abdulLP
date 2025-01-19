@@ -5,6 +5,8 @@ import Features from "./Landing/Features";
 import ExtendedFeatures from "./Landing/ExtendedFeatures";
 import Services from "./Landing/Services";
 import Footer from "./Layout/Footer";
+import Testimonials from "./Landing/Testimonials";
+import FAQ from "./Landing/FAQ";
 const Page: React.FC = () => {
   return (
     <div>
@@ -17,7 +19,9 @@ const Page: React.FC = () => {
           <Hero />
           <Features />
           <ExtendedFeatures />
+          <Testimonials />
           <Services />
+          <FAQ />
         </main>
       </div>
 

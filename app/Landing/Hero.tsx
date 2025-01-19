@@ -84,7 +84,7 @@ const Hero = () => {
 
             <button className="p-[3px] relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl" />
-              <div className="px-8 py-3  bg-black rounded-2xl  relative group transition duration-200 text-white hover:bg-transparent">
+              <div className="px-8 py-3  bg-black rounded-2xl  relative group transition duration-300 text-white hover:bg-black/80">
                 Explore LLM APIs
               </div>
             </button>

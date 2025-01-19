@@ -189,13 +189,13 @@ const Carousal: React.FC = () => {
                 x: isActive
                   ? 0
                   : isLeft
-                  ? -300
+                  ? 0
                   : isRight
-                  ? 300
+                  ? 0
                   : isExtraLeft
-                  ? -500
+                  ? 0
                   : isExtraRight
-                  ? 500
+                  ? 0
                   : 0,
               }}
               animate={{
