@@ -19,7 +19,7 @@ const Footer = () => {
             <div>Search</div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-16">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-16">
             <div className="flex flex-col gap-4 items-center md:items-start">
               <h3 className="text-base font-bold text-primaryText">
                 Resources
@@ -256,7 +256,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col md:flex-row gap-10 items-center md:items-start">
-            <p className="text-center md:text-right text-white/30 text-base font-normal">
+            <p className="text-center md:text-right text-white/30 text-xs sm:text-base font-normal">
               Copyright © 2017 - 2023, Symisc Systems, SUARL. All rights
               reserved.
               <br />

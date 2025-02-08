@@ -24,7 +24,7 @@ const CarousalItem: React.FC<CarousalItemProps & { isActive: boolean }> = ({
   isActive,
 }) => (
   <div
-    className={`relative w-full h-full p-4 rounded-3xl shadow-2xl flex flex-col items-center justify-center text-center overflow-hidden ${
+    className={`relative w-[310px] h-[250px] sm:w-[450px] sm:h-[300px] md:w-[550px] md:h-[400px] p-4 rounded-3xl shadow-2xl flex flex-col items-center justify-center text-center overflow-hidden ${
       isActive ? "group" : ""
     }`}
   >
@@ -41,28 +41,30 @@ const CarousalItem: React.FC<CarousalItemProps & { isActive: boolean }> = ({
 
     {/* Gradient Overlay */}
     <div
-      className={`absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/80 to-transparent transition-all duration-500 ${
-        isActive ? "group-hover:from-black/95 group-hover:h-full" : ""
+      className={`absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/85 to-transparent transition-all duration-500 ${
+        isActive ? "group-hover:from-black  group-hover:h-full" : ""
       }`}
     ></div>
 
     {/* Content */}
     <div
-      className={`absolute bottom-1 left-6 text-left transition-all duration-500 ${
+      className={`absolute  bottom-1 left-6 text-left transition-all duration-500 ${
         isActive ? "group-hover:bottom-8" : ""
       }`}
     >
       {/* Product Name */}
       <h3
-        className={`text-xl font-semibold text-white mb-2 translate-y-12 transition-all duration-500 ${
-          isActive ? "group-hover:text-2xl group-hover:translate-y-0" : ""
+        className={`text-lg sm:text-xl font-semibold text-white mb-2 translate-y-32 sm:translate-y-16 md:translate-y-12  transition-all duration-500 ${
+          isActive
+            ? "group-hover:text-lg sm:group-hover:text-2xl group-hover:translate-y-0"
+            : ""
         }`}
       >
         {name}
       </h3>
       {/* Description */}
       <p
-        className={`text-sm text-white opacity-0 translate-y-6 transition-all duration-500 ${
+        className={`text-[13px] sm:text-sm mr-3 text-white opacity-0 translate-y-6 transition-all duration-500 ${
           isActive ? "group-hover:opacity-100 group-hover:translate-y-0" : ""
         }`}
       >
@@ -140,11 +142,11 @@ const Carousal: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full h-[500px] flex items-center justify-center">
+    <div className="relative w-full h-[300px]  sm:h-[350px]  md:h-[500px] flex items-center justify-center">
       {/* Left Button */}
       <button
         onClick={handlePrev}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white p-3 rounded-full shadow-lg hover:bg-white/5 transition duration-500 z-20 flex items-center justify-center"
+        className=" absolute left-1 sm:left-4 top-1/2 transform -translate-y-1/2 sm:bg-black sm:bg-opacity-30 text-white p-3 rounded-full shadow-lg sm:hover:bg-white/5 transition duration-500 z-50 flex items-center justify-center"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +240,7 @@ const Carousal: React.FC = () => {
                 damping: 20,
                 stiffness: 100,
               }}
-              className={`absolute w-[550px] h-[400px] ${
+              className={`absolute  ${
                 isActive ? "z-20" : isLeft || isRight ? "z-10" : "z-0"
               }`}
             >
@@ -257,7 +259,7 @@ const Carousal: React.FC = () => {
       {/* Right Button */}
       <button
         onClick={handleNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white p-3 rounded-full shadow-2xl hover:bg-white/5 transition duration-500 z-20 flex items-center justify-center"
+        className="absolute right-1 sm:right-4 top-1/2 transform -translate-y-1/2 sm:bg-black sm:bg-opacity-30  sm:hover:bg-white/5 text-white p-3 rounded-full shadow-2xl  transition duration-500 z-20 flex items-center justify-center"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

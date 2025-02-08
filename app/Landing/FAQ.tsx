@@ -36,7 +36,7 @@ const QuestionsAnswers = [
 
 const FAQ = () => {
   return (
-    <div className="my-24">
+    <div className="my-24 mx-5 md:mx-0">
       <div className="flex flex-col items-start">
         <h2 className="text-2xl md:text-5xl font-bold text-start mb-8 sm:mb-16 text-primaryText">
           Frequently Asked Questions

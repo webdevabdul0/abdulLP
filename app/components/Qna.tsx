@@ -30,24 +30,17 @@ const Qna = ({
           key={id}
           className="w-full border-b-2 border-b-white/20 flex flex-col py-5 mb-5"
         >
-          <div className="w-full flex flex-row justify-between">
+          <div
+            className="w-full flex flex-row justify-between cursor-pointer"
+            onClick={() => toggleAnswer(id)}
+          >
             <h3 className="text-base md:text-xl font-semibold text-start mb-3 sm:mb-5 text-primaryText select-none">
               {question}
             </h3>
             {openAnswers[id] ? (
-              <FaMinus
-                size={36}
-                color="white"
-                className="ml-5 cursor-pointer"
-                onClick={() => toggleAnswer(id)}
-              />
+              <FaMinus color="white" className="ml-5   size-5 md:size-6 " />
             ) : (
-              <FaPlus
-                size={36}
-                color="white"
-                className="ml-5 cursor-pointer"
-                onClick={() => toggleAnswer(id)}
-              />
+              <FaPlus color="white" className="ml-5   size-5 md:size-6" />
             )}
           </div>
 

@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -17,59 +18,73 @@ const Header = () => {
           LOGO
         </h3>
         <FaBars size={24} color="white" onClick={toogleMenu} />
-
-        {menu && (
-          <div
-            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
-            onClick={toogleMenu}
-          >
-            <div
-              className=" flex flex-col items-center justify-center"
-              onClick={(e) => e.stopPropagation()}
+        <AnimatePresence>
+          {menu && (
+            <motion.div
+              initial={{ opacity: 0, x: "100%" }} // Start completely off-screen
+              animate={{
+                opacity: 1,
+                x: 0,
+              }} // Slide into view
+              exit={{ opacity: 0, x: "100%" }} // Slide out when hidden
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+              className="fixed inset-0 z-50 w-full h-screen bg-black/90 flex items-center justify-center"
+              onClick={toogleMenu}
             >
-              {" "}
-              <nav>
-                <ul className="flex flex-col items-center gap-8">
-                  <li>
-                    <a
-                      href="#"
-                      className="text-textMuted hover:text-white/50 transition duration-300 font-normal"
-                    >
-                      Getting Started
-                    </a>
-                  </li>
+              <FaTimes
+                size={24}
+                color="white"
+                onClick={toogleMenu}
+                className="absolute top-10 right-4"
+              />
+              <div
+                className=" flex flex-col items-center justify-center"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {" "}
+                <nav>
+                  <ul className="flex flex-col items-center gap-8">
+                    <li>
+                      <a
+                        href="#"
+                        className="text-textMuted hover:text-white/50 transition duration-300 font-normal"
+                      >
+                        Getting Started
+                      </a>
+                    </li>
 
-                  <li>
-                    <a
-                      href="#"
-                      className="text-textMuted hover:text-white/50 transition duration-300 font-normal"
-                    >
-                      API Portal
-                    </a>
-                  </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="text-textMuted hover:text-white/50 transition duration-300 font-normal"
+                      >
+                        API Portal
+                      </a>
+                    </li>
 
-                  <li>
-                    <a
-                      href="#"
-                      className="text-textMuted hover:text-white/50 transition duration-300 font-normal"
-                    >
-                      Products & SDKs
-                    </a>
-                  </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="text-textMuted hover:text-white/50 transition duration-300 font-normal"
+                      >
+                        Products & SDKs
+                      </a>
+                    </li>
 
-                  <li>
-                    <a
-                      href="#"
-                      className="text-textMuted hover:text-white/50 transition duration-300 font-normal"
-                    >
-                      Vision Playground
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        )}
+                    <li>
+                      <a
+                        href="#"
+                        className="text-textMuted hover:text-white/50 transition duration-300 font-normal"
+                      >
+                        Vision Playground
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       <div className="w-full  flex-row justify-center gap-5 hidden md:flex">
