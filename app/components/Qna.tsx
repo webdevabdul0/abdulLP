@@ -1,44 +1,69 @@
 "use client";
-import React from "react";
-import { FaPlus } from "react-icons/fa";
-import { useState } from "react";
+import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { FaPlus, FaMinus } from "react-icons/fa";
+
 const Qna = ({
   items,
 }: {
   items: {
+    id: number;
     question: string;
     answer: string;
   }[];
 }) => {
-  const [theAnswer, setTheAnswer] = useState(false);
+  const [openAnswers, setOpenAnswers] = useState<{ [key: number]: boolean }>(
+    {}
+  );
 
-  const toggleAnswer = () => {
-    console.log("We toggled Answer");
-    setTheAnswer(!theAnswer);
+  const toggleAnswer = (id: number) => {
+    setOpenAnswers((prev) => ({
+      ...prev,
+      [id]: !prev[id], // Toggle the specific question
+    }));
   };
+
   return (
     <>
-      {items.map(({ question, answer }) => (
-        // eslint-disable-next-line react/jsx-key
-        <div className="w-full  border-b-2 border-b-white/20 flex flex-col py-5 mb-5">
+      {items.map(({ id, question, answer }) => (
+        <div
+          key={id}
+          className="w-full border-b-2 border-b-white/20 flex flex-col py-5 mb-5"
+        >
           <div className="w-full flex flex-row justify-between">
-            <h3 className="text-base md:text-xl font-semibold text-start mb-3 sm:mb-5 text-primaryText">
+            <h3 className="text-base md:text-xl font-semibold text-start mb-3 sm:mb-5 text-primaryText select-none">
               {question}
             </h3>
-
-            <FaPlus
-              size={36}
-              color="white"
-              className="ml-5"
-              onClick={toggleAnswer}
-            />
+            {openAnswers[id] ? (
+              <FaMinus
+                size={36}
+                color="white"
+                className="ml-5 cursor-pointer"
+                onClick={() => toggleAnswer(id)}
+              />
+            ) : (
+              <FaPlus
+                size={36}
+                color="white"
+                className="ml-5 cursor-pointer"
+                onClick={() => toggleAnswer(id)}
+              />
+            )}
           </div>
 
-          {theAnswer && (
-            <p className="text-base sm:text-base text-textMuted font-medium">
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{
+              height: openAnswers[id] ? "auto" : 0,
+              opacity: openAnswers[id] ? 1 : 0,
+            }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="overflow-hidden"
+          >
+            <p className="text-base sm:text-base text-textMuted font-medium select-none">
               {answer}
             </p>
-          )}
+          </motion.div>
         </div>
       ))}
     </>
