@@ -57,13 +57,13 @@ const Services = () => {
           </button>
         </div>
 
-        <div className="basis-1/2">
+        <div className="basis-1/2  sm:pl-8">
           <Image src={Image1} alt={"hero-img"} />
         </div>
       </div>
 
       <div className="flex flex-col md:flex-row w-full justify-between">
-        <div className="basis-1/2">
+        <div className="basis-1/2 sm:pr-8">
           <Image src={Image2} alt={"hero-img"} />
         </div>
 

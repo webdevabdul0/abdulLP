@@ -4,33 +4,41 @@ import Qna from "../components/Qna";
 const QuestionsAnswers = [
   {
     id: 1,
-    question: "What is the difference between React and Angular?",
+    question: "Who are you and what do you do?",
     answer:
-      "React is a JavaScript library focused on building user interfaces, while Angular is a full-fledged framework that includes everything you need for building dynamic web applications. React is more flexible and allows you to choose your own tools, whereas Angular provides more out-of-the-box solutions.",
+      "I’m Abdul Hanan, a Full-Stack Web Developer & UX/UI Designer specializing in React, Next.js, TailwindCSS, and AI-powered applications. I build scalable web apps, intuitive UI/UX designs, and AI-driven digital products.",
   },
   {
     id: 2,
-    question: "How do I optimize my website for performance?",
+    question: "What technologies do you specialize in?",
     answer:
-      "To optimize website performance, you can minimize HTTP requests, compress images, implement lazy loading for assets, use caching effectively, and minimize JavaScript and CSS files. Tools like Lighthouse can help analyze performance and suggest improvements.",
+      "I work primarily with frontend technologies like React.js, Next.js, and TailwindCSS, backend technologies like Node.js, Express.js, and Firebase, AI tools like Mediapipe and Google Vision API, and UI/UX design tools like Figma and Adobe XD.",
   },
   {
     id: 3,
-    question: "What is RESTful API?",
+    question: "What types of projects have you worked on?",
     answer:
-      "REST (Representational State Transfer) is an architectural style for designing networked applications. A RESTful API allows communication between systems by using standard HTTP methods such as GET, POST, PUT, and DELETE. It operates in a stateless manner and transfers data in formats like JSON or XML.",
+      "I’ve built AI-powered applications, dashboards, and SaaS products, including a Yoga Pose Detection App, Qoodo Web Apps, and a Waste Sorting AI App. My projects focus on AI integration, seamless UX, and high-performance web development.",
   },
   {
     id: 4,
-    question: "What is version control?",
+    question: "Do you take on freelance or contract work?",
     answer:
-      "Version control is a system that helps you track changes to your code over time, allowing multiple developers to work on a project simultaneously without conflicts. Git is the most popular version control system used in modern software development, and GitHub is a cloud platform for hosting Git repositories.",
+      "Currently, I’m focused on building and selling AI-powered digital products, but I’m open to exciting collaboration opportunities. Feel free to reach out if you have an interesting project!",
   },
+
   {
     id: 5,
-    question: "What are the key differences between SQL and NoSQL databases?",
+    question: "Do you develop both frontend and backend?",
     answer:
-      "SQL databases are relational and use structured query language for data manipulation, while NoSQL databases are non-relational and can handle a variety of data types like documents, key-value pairs, graphs, etc. SQL databases are ideal for structured data with predefined schemas, whereas NoSQL is better for handling unstructured data or large-scale applications.",
+      "Yes! I specialize in full-stack web development, ensuring smooth integration between frontend (Next.js, React) and backend (Node.js, Express.js, Firebase). I also incorporate AI-driven features to enhance functionality.",
+  },
+
+  {
+    id: 6,
+    question: "How can I contact you?",
+    answer:
+      "You can reach me via email at Webdevabdul@gmail.com or connect with me on GitHub at github.com/webdevabdul0.",
   },
 ];
 
