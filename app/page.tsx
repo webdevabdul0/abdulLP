@@ -10,8 +10,8 @@ import FAQ from "./Landing/FAQ";
 import Contact from "./Landing/Contact";
 const Page: React.FC = () => {
   return (
-    <div className="w-full overflow-hidden">
-      <div className="mt-12 mx-auto  flex flex-col items-center max-w-7xl relative ">
+    <div className="w-full overflow-hidden  bg-background">
+      <div className="mt-12 mx-auto  flex flex-col items-center max-w-7xl relative w-full">
         <header className="w-full">
           <Header />
         </header>
@@ -20,10 +20,19 @@ const Page: React.FC = () => {
           <Hero />
           <Features />
           <ExtendedFeatures />
-          <Testimonials />
-          <Services />
-          <FAQ />
-          <Contact />
+          <div id="Testimonials">
+            <Testimonials />
+          </div>
+          <div id="Services">
+            <Services />
+          </div>
+          <div id="Faq">
+            {" "}
+            <FAQ />
+          </div>
+          <div id="Contact">
+            <Contact />
+          </div>
         </main>
       </div>
 

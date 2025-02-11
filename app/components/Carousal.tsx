@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-interface Product {
-  id: number;
-  name: string;
-  desc: string;
-  image: string;
-  href: string;
-}
+import { items } from "../constants";
 
 interface CarousalItemProps {
   name: string;
@@ -84,51 +77,6 @@ const CarousalItem: React.FC<CarousalItemProps & { isActive: boolean }> = ({
 );
 
 const Carousal: React.FC = () => {
-  const items: Product[] = [
-    {
-      id: 1,
-      name: "Product Number 1 Name",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit lacus, sagittis in eros sed, lobortis cursus felis. In eu accumsan enim. Sed luctus, diam non dictum lobortis, augue quam tristique velit, at fermentum enim turpis in urna. ",
-      image: "/Services/hero6.jpg",
-      href: "#",
-    },
-    {
-      id: 2,
-      name: "Product 2",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit lacus, sagittis in eros sed, lobortis cursus felis. In eu accumsan enim. Sed luctus, diam non dictum lobortis, augue quam tristique velit, at fermentum enim turpis in urna. ",
-      image: "/Services/hero1.jpg",
-      href: "#",
-    },
-    {
-      id: 3,
-      name: "Product 3",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit lacus, sagittis in eros sed, lobortis cursus felis. In eu accumsan enim. Sed luctus, diam non dictum lobortis, augue quam tristique velit, at fermentum enim turpis in urna. ",
-      image: "/Services/hero2.jpg",
-      href: "#",
-    },
-    {
-      id: 4,
-      name: "Product 4",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit lacus, sagittis in eros sed, lobortis cursus felis. In eu accumsan enim. Sed luctus, diam non dictum lobortis, augue quam tristique velit, at fermentum enim turpis in urna. ",
-      image: "/Services/hero3.jpg",
-      href: "#",
-    },
-    {
-      id: 5,
-      name: "Product 5",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit lacus, sagittis in eros sed, lobortis cursus felis. In eu accumsan enim. Sed luctus, diam non dictum lobortis, augue quam tristique velit, at fermentum enim turpis in urna. ",
-      image: "/Services/hero4.jpg",
-      href: "#",
-    },
-    {
-      id: 6,
-      name: "Product 6",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit lacus, sagittis in eros sed, lobortis cursus felis. In eu accumsan enim. Sed luctus, diam non dictum lobortis, augue quam tristique velit, at fermentum enim turpis in urna. ",
-      image: "/Services/hero5.jpg",
-      href: "#",
-    },
-  ];
-
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleNext = () => {

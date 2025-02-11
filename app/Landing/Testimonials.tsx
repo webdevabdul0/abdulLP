@@ -4,7 +4,7 @@ import React from "react";
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 const Testimonials = () => {
   return (
-    <div className=" max-w-7xl w-screen md:w-full overflow-hidden flex flex-col   items-center justify-center relative my-24">
+    <div className=" max-w-7xl w-screen xl:w-full overflow-hidden flex flex-col   items-center justify-center relative my-24">
       <div className="flex flex-col items-center">
         <h2 className="text-2xl md:text-5xl font-bold text-center mb-8 sm:mb-16 text-primaryText">
           What My Client&apos;s Say

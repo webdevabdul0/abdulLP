@@ -51,21 +51,21 @@ const Hero = () => {
         rangeY={800}
         particleCount={50}
         baseHue={220}
-        className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full relative"
+        className="flex items-center flex-col justify-center px-2 md:px-5 xl:px-10  py-4 w-full relative"
       >
         <div ref={headerContent}>
           <div ref={headerText}>
-            <h3 className="text-sm md:text-lg uppercase text-textMuted tracking-widest text-center mb-3">
+            <h3 className="text-sm md:text-lg  uppercase text-textMuted tracking-widest text-center mb-3">
               UX/UI Designer & Frontend Developer
             </h3>
 
-            <h1 className="text-4xl md:text-7xl font-extrabold  text-center mb-5">
+            <h1 className="text-4xl text-primaryText sm:text-5xl xl:text-7xl font-extrabold  text-center mb-5">
               Bringing Ideas to Life
               <br />
               Crafting Seamless Experiences
             </h1>
 
-            <p className="text-base md:text-xl text-center  font-light text-textMuted">
+            <p className="text-base sm:text-lg xl:text-xl text-center  font-light text-textMuted">
               Hi, I&apos;m Abdul Hanan, a JavaScript Developer & UX/UI Designer
               passionate about building AI-powered apps, SaaS products, and
               modern web interfaces.
@@ -76,16 +76,22 @@ const Hero = () => {
             className="flex flex-row justify-center mt-2 md:mt-6 gap-4"
             ref={buttonContainer}
           >
-            <button className="shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-8 py-2 bg-[#0070f3] rounded-2xl text-white font-light transition duration-200 ease-linear text-sm md:text-base">
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-8 py-2 bg-[#0070f3] rounded-2xl  text-white font-light transition duration-200 ease-linear text-sm md:text-base flex justify-center items-center"
+            >
               Download Resume
-            </button>
-
-            <button className="p-[3px] relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl" />
-              <div className="px-8 py-3  bg-black rounded-2xl  relative group transition duration-300 text-white hover:bg-black/80">
-                Get in Touch
-              </div>
-            </button>
+            </a>
+            <a href="#Contact">
+              <button className="p-[3px] relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl" />
+                <div className="px-8 py-3  bg-background rounded-2xl  relative group hover:bg-primary/20 transition duration-300 text-primaryText ">
+                  Get in Touch
+                </div>
+              </button>
+            </a>
           </div>
         </div>
 

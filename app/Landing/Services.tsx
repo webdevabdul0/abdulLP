@@ -52,9 +52,14 @@ const Services = () => {
             </li>
           </ul>
 
-          <button className="border-[2px] border-white border-opacity-65 px-5 py-3 sm:py-3 rounded-2xl text-white/80 text-xs md:text-base font-semibold ">
-            Contact me
-          </button>
+          <a href="#Contact">
+            <button className="p-[3px] relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl" />
+              <div className="px-8 py-3  bg-background rounded-2xl  relative group hover:bg-primary/20 transition duration-300 text-primaryText ">
+                Contact Me
+              </div>
+            </button>
+          </a>
         </div>
 
         <div className="basis-1/2  sm:pl-8">
@@ -114,9 +119,14 @@ const Services = () => {
             </li>
           </ul>
 
-          <button className="border-[2px] border-white border-opacity-65 px-5 py-3 sm:py-3 rounded-2xl text-white/80 text-xs md:text-base font-semibold ">
-            Contact me
-          </button>
+          <a href="#Contact">
+            <button className="p-[3px] relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl" />
+              <div className="px-8 py-3  bg-background rounded-2xl  relative group hover:bg-primary/20 transition duration-300 text-primaryText ">
+                Contact Me
+              </div>
+            </button>
+          </a>
         </div>
       </div>
     </div>
