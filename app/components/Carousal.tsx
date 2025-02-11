@@ -131,10 +131,10 @@ const Carousal: React.FC = () => {
                 opacity: isActive
                   ? 1
                   : isLeft || isRight
-                  ? 1
+                  ? 0
                   : isExtraLeft || isExtraRight
-                  ? 0.2
-                  : 0.1,
+                  ? 0.0
+                  : 0.0,
                 scale: isActive ? 1 : 0.8,
                 x: isActive
                   ? 0
