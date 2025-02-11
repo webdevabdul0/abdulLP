@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const colors = require("tailwindcss/colors");
+// @ts-expect-error
 import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
 
 export default {

@@ -16,14 +16,6 @@ const Header = () => {
     setMenu(!menu);
   };
 
-  useEffect(() => {
-    if (menu) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-  }, [menu]);
-
   return (
     <div className="w-full">
       <div className=" flex flex-row justify-between lg:hidden mx-4 sm:mx-8 ">
