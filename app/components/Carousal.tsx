@@ -47,7 +47,7 @@ const CarousalItem: React.FC<CarousalItemProps & { isActive: boolean }> = ({
     >
       {/* Product Name */}
       <h3
-        className={`text-lg sm:text-xl font-semibold text-white mb-2 translate-y-32 sm:translate-y-16 md:translate-y-12  transition-all duration-500 ${
+        className={`text-lg sm:text-xl font-semibold text-white mb-2 translate-y-14 sm:translate-y-16 md:translate-y-12  transition-all duration-500 ${
           isActive
             ? "group-hover:text-lg sm:group-hover:text-2xl group-hover:translate-y-0"
             : ""

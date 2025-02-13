@@ -5,6 +5,7 @@ import Image from "next/image";
 import Image1 from "../../public/Contact/1.png";
 import Image2 from "../../public/Contact/2.png";
 import Image3 from "../../public/Contact/3.png";
+import Image4 from "../../public/Contact/4.png";
 import logo from "../../public/Contact/logo.png";
 const Contact = () => {
   return (
@@ -77,9 +78,9 @@ const Contact = () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://www.behance.net/abdulhanan2003"
+                    href="https://www.linkedin.com/in/abdul-hanan-6b5b73248"
                   >
-                    <Image src={Image2} alt="Img" width={24} height={24} />
+                    <Image src={Image3} alt="Img" width={24} height={24} />
                   </a>
                 </li>
 
@@ -87,9 +88,19 @@ const Contact = () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://www.linkedin.com/in/abdul-hanan-6b5b73248"
+                    href="https://www.fiverr.com/abdulhanan0123"
                   >
-                    <Image src={Image3} alt="Img" width={24} height={24} />
+                    <Image src={Image4} alt="Img" width={24} height={24} />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.behance.net/abdulhanan2003"
+                  >
+                    <Image src={Image2} alt="Img" width={24} height={24} />
                   </a>
                 </li>
               </ul>
