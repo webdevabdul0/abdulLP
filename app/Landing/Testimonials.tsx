@@ -16,6 +16,19 @@ const Testimonials = () => {
         direction="left"
         speed="normal"
       />
+
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.fiverr.com/abdulhanan0123/design-mobile-app-and-web-app-using-figma-and-adobe-xd"
+      >
+        <button className="p-[3px] relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl" />
+          <div className="px-8 py-3  bg-background rounded-2xl  relative group hover:bg-primary/20 transition duration-300 text-primaryText ">
+            View More
+          </div>
+        </button>
+      </a>
     </div>
   );
 };
@@ -25,31 +38,32 @@ export default Testimonials;
 const testimonial = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "Abdul Hanan did an outstanding job on our app design! The visual appeal and attention to detail were top-notch, showcasing incredible creativity. Working with him was a breeze due to his prompt delivery, fluent communication, and polite demeanor.",
+    name: "awmccloud ",
+    title: "Outstanding job!",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+      "Abdul Hanan truly exceeded my expectations with his outstanding professionalism in app design. His politeness and high level of cooperation made the process smooth and enjoyable. Delivery was swift and top-notch—HIGHLY RECOMMEND! 👍",
+    name: "yousifroh",
+    title: "HIGHLY RECOMMEND!",
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+      "Very professional service and communication. The work was done perfectly, of very high quality. Definitely will work with Abdul again in the future!",
+    name: "orkhen",
+    title: "Very professional service",
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "Abdul is an impressive professional and it was a pleasure to work with him, he's able to provide great ideas for the concept you have and understand suggestions in the best way to deliver top-quality UX/UI. Definitely will work again with him in the future, 10/10 recommended!",
+    name: "adrian_castro_9",
+    title: "10/10 recommended!",
+  },
+  {
+    quote:
+      "We have worked on a complicated project with Abdul and can only report the best. He works very committed and fast. He also implemented all change requests super fast and without problems. Despite this he stands his own ideas in process. That was really helpful and had a positive influence on the main idea. We definitely continue to work with him!",
+    name: "escape_this",
+    title: "Committed and fast!",
   },
 ];

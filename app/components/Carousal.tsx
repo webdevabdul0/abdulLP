@@ -1,7 +1,9 @@
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { items } from "../constants";
+import { useEffect } from "react";
 
 interface CarousalItemProps {
   name: string;
@@ -82,6 +84,14 @@ const Carousal: React.FC = () => {
   const handleNext = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 8000); // Calls every 10 seconds
+
+    return () => clearInterval(interval); // Cleanup when component unmounts
+  }, [handleNext]); // Ensure it updates if handleNext changes
 
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>

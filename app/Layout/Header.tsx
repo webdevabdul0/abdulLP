@@ -23,7 +23,7 @@ const Header = () => {
         <h3 className="text-xl text-primaryText tracking-wide uppercase font-bold">
           Abdul Hanan
         </h3>
-        <FaBars size={24} color="white" onClick={toogleMenu} />
+        <FaBars size={24} color="white" onClick={toogleMenu} className="z-20" />
         <AnimatePresence>
           {menu && (
             <motion.div
@@ -43,6 +43,7 @@ const Header = () => {
                 onClick={toogleMenu}
                 className="absolute top-10 right-4"
               />
+
               <div
                 className=" flex flex-col items-center justify-center"
                 onClick={(e) => e.stopPropagation()}
@@ -53,6 +54,7 @@ const Header = () => {
                     <li>
                       <a
                         href="#Testimonials"
+                        onClick={toogleMenu}
                         className="text-textMuted hover:text-white/50 transition duration-300 font-normal"
                       >
                         Testimonials
@@ -61,6 +63,7 @@ const Header = () => {
 
                     <li>
                       <a
+                        onClick={toogleMenu}
                         href="#Services"
                         className="text-textMuted hover:text-white/50 transition duration-300 font-normal"
                       >
@@ -70,6 +73,7 @@ const Header = () => {
 
                     <li>
                       <a
+                        onClick={toogleMenu}
                         href="#Faq"
                         className="text-textMuted hover:text-white/50 transition duration-300 font-normal"
                       >
@@ -79,6 +83,7 @@ const Header = () => {
 
                     <li>
                       <a
+                        onClick={toogleMenu}
                         href="#Contact"
                         className="text-textMuted hover:text-white/50 transition duration-300 font-normal"
                       >
