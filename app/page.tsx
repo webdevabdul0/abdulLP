@@ -8,6 +8,7 @@ import Footer from "./Layout/Footer";
 import Testimonials from "./Landing/Testimonials";
 import FAQ from "./Landing/FAQ";
 import Contact from "./Landing/Contact";
+import Portfolio from "./Landing/Portfolio";
 const Page: React.FC = () => {
   return (
     <div className="w-full overflow-hidden  bg-background">
@@ -19,6 +20,9 @@ const Page: React.FC = () => {
         <main>
           <Hero />
           <Features />
+          <div id="Portfolio">
+            <Portfolio />
+          </div>
           <ExtendedFeatures />
           <div id="Testimonials">
             <Testimonials />

@@ -68,6 +68,8 @@ const CarousalItem: React.FC<CarousalItemProps & { isActive: boolean }> = ({
       {/* Link */}
       <a
         href={href}
+        target="_blank"
+        rel="noopener noreferrer"
         className={`text-base text-primary font-bold  opacity-0 translate-y-12 transition-all duration-500 ${
           isActive ? "group-hover:opacity-100 group-hover:translate-y-0" : ""
         }`}

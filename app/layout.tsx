@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import Script from "next/script";
 
+// TODO: Move this to a .env.local file (e.g., NEXT_PUBLIC_GTAG_ID=G-B2DEL0NCC1)
 const GTAG_ID = "G-B2DEL0NCC1"; // Your Google Tag ID
 
 import "./globals.css";
@@ -26,13 +27,16 @@ export default function RootLayout({
       lang="en"
       className="dark bg-background text-primaryText overflow-x-hidden"
     >
-      <head>
-        {/* Google Tag Script */}
+      <head></head>
+      <body className={`${manrope.variable} antialiased`}>
+        {children}
+        {/* Google Tag Script - Placed at the end of body for better performance */}
         <Script
+          strategy="afterInteractive"
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${GTAG_ID}`}
         />
-        <Script id="google-analytics">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -40,8 +44,7 @@ export default function RootLayout({
             gtag('config', '${GTAG_ID}');
           `}
         </Script>
-      </head>
-      <body className={`${manrope.variable} antialiased`}>{children}</body>
+      </body>
     </html>
   );
 }
