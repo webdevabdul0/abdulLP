@@ -123,4 +123,13 @@ export const items: Product[] = [
     category: "development",
     technologies: ["Next.js", "Tailwind CSS"],
   },
+  {
+    id: 10,
+    name: "GoGreek Social Platform",
+    desc: "A social platform with features like messaging and group chat channels, posting, notifications, bookings, and profiles. Built using Next.js, Firebase, and Stream.",
+    image: "/Hero/project (9).jpg",
+    href: "https://gogreek.netlify.app/home",
+    category: "development",
+    technologies: ["Next.js", "Firebase", "Stream"],
+  },
 ];
