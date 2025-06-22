@@ -46,6 +46,7 @@ export interface Product {
   desc: string;
   image: string;
   href: string;
+  githubUrl?: string;
   category: "development" | "design";
   technologies?: string[];
 }
@@ -55,7 +56,8 @@ export const items: Product[] = [
     name: "Yoga Posture Detection & Correction System",
     desc: "A React Native app using Mediapipe for real-time yoga posture analysis and correction.",
     image: "/Hero/project (1).jpg",
-    href: "https://github.com/webdevabdul0/YogaApp",
+    href: "#",
+    githubUrl: "https://github.com/webdevabdul0/YogaApp",
     category: "development",
     technologies: ["React Native", "Mediapipe", "TypeScript"],
   },
@@ -76,6 +78,7 @@ export const items: Product[] = [
     href: "https://qoodo.io/",
     category: "development",
     technologies: ["Next.js", "Tailwind CSS", "Figma"],
+    githubUrl: "https://github.com/webdevabdul0/qoodo-Landing",
   },
   {
     id: 4,
@@ -85,6 +88,7 @@ export const items: Product[] = [
     href: "#",
     category: "development",
     technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    githubUrl: "https://github.com/webdevabdul0/abdulLP",
   },
 
   {
@@ -104,6 +108,7 @@ export const items: Product[] = [
     href: "https://brighthubmind.netlify.app/",
     category: "development",
     technologies: ["React", "TypeScript", "Vite", "Shadcn UI", "Tailwind CSS", "Supabase"],
+    githubUrl: "https://github.com/webdevabdul0/brightmind-learning-nexus",
   },
   {
     id: 8,
@@ -113,6 +118,7 @@ export const items: Product[] = [
     href: "https://chat-bubble-app.netlify.app/",
     category: "development",
     technologies: ["OpenAI API", "RAG", "Pinecone", "n8n", "TypeScript", "React"],
+    githubUrl: "https://github.com/webdevabdul0/chroma-bubble-app",
   },
   {
     id: 9,
@@ -122,6 +128,7 @@ export const items: Product[] = [
     href: "https://satvaa.netlify.app/",
     category: "development",
     technologies: ["Next.js", "Tailwind CSS"],
+    githubUrl: "https://github.com/webdevabdul0/sattvaLP",
   },
   {
     id: 10,
@@ -131,5 +138,6 @@ export const items: Product[] = [
     href: "https://gogreek.netlify.app/home",
     category: "development",
     technologies: ["Next.js", "Firebase", "Stream"],
+    githubUrl: "https://github.com/webdevabdul0/chat-app",
   },
 ];

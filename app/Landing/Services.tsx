@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Image1 from "../../public/Services/1.png";
 import Image2 from "../../public/Services/2.png";
-import Image3 from "../../public/Services/1.png"; // Using an existing image as a placeholder
+import Image3 from "../../public/Services/3.png"; // Using an existing image as a placeholder
 
 const Services = () => {
   return (

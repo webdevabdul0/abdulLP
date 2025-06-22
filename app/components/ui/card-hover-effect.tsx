@@ -14,6 +14,7 @@ export const HoverEffect = ({
     link: string;
     image: string;
     technologies: string[];
+    githubUrl?: string;
   }[];
   className?: string;
 }) => {
@@ -39,16 +40,28 @@ export const HoverEffect = ({
                 objectFit="cover"
                 className="transition-transform duration-300 group-hover:scale-105"
               />
-              <Link
-                href={item?.link || "#"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              >
-                <span className="text-white font-bold border border-white rounded-full px-4 py-2">
-                  View Project
-                </span>
-              </Link>
+              <div className="absolute inset-0 bg-black/50 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {item.link && item.link !== "#" && (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white font-bold border border-white rounded-full px-4 py-2"
+                  >
+                    View Project
+                  </Link>
+                )}
+                {item.githubUrl && (
+                  <Link
+                    href={item.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white font-bold border border-white rounded-full px-4 py-2"
+                  >
+                    View Source
+                  </Link>
+                )}
+              </div>
             </div>
             <div className="p-4 flex flex-col flex-grow">
               <h3 className="font-bold text-white text-lg mb-2">

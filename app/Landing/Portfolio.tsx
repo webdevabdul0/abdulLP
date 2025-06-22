@@ -17,6 +17,7 @@ const Portfolio = () => {
     link: item.href,
     image: item.image,
     technologies: item.technologies || [],
+    githubUrl: item.githubUrl,
   }));
 
   return (
